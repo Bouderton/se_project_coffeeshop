@@ -9,8 +9,8 @@
       content="The Triple Peaks Library Cafe, a creative outlet with all your coffee needs!"
     />
     <meta name="keywords" content="Coffee, Library, Cafe," />
-    <link rel="stylesheet" href="/vendor/normalize.css" />
-    <link rel="stylesheet" href="/pages/index.css" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,12 +22,148 @@
   </head>
   <body>
     <div class="page">
-      <header class="header"></header>
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Triple Espresso Logo"
+            class="nav__logo"
+          />
+
+          <!-- HEADER NAV LINKS-->
+
+          <ul class="nav__links">
+            <li>
+              <a href="#recipes-link" class="nav__link">Recipes</a>
+            </li>
+            <li>
+              <a href="#reservation-link" class="nav__link">Book a Table</a>
+            </li>
+            <li>
+              <a href="#menu-link" class="nav__link">Menu</a>
+            </li>
+            <li>
+              <a href="#contacts-link" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- HEADER TITLE AND DESCRIPTION-->
+
+        <h1 class="header__title">
+          <span class="header__span-accent">Specialty Coffee</span>
+          in the Triple Peaks Library
+        </h1>
+        <p class="header__description">
+          Welcome to our study zone! We've got the coffee to energize you and
+          the cozy vibes to help you get creative.
+        </p>
+
+        <!-- HEADER IMAGE & BACKGROUND -->
+
+        <img
+          class="header__image"
+          src="./images/inside_coffee_shop.png"
+          alt="Coffee Shop Picture"
+        />
+
+        <!-- HEADER FOOTER -->
+        <div class="header__footer">
+          <div>
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday - Friday (10:00 - 19:00)</p>
+            <p class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</p>
+          </div>
+          <p class="header__paragraph">
+            200 Success Avenue, The Town of Triple Peaks
+          </p>
+        </div>
+      </header>
       <main class="content">
-        <section class="recipes"><!-- RECIPES --></section>
-        <section class="reservation"><!-- RESERVATION --></section>
-        <section class="menu"><!-- MENU --></section>
-        <section class="about"><!-- ABOUT --></section>
+        <!-- RECIPES -->
+
+        <section id="recipes-link" class="recipes">
+          <h2 class="recipes__title">Recipes</h2>
+          <p class="recipes__subtitle">
+            Check out some recipes we've collected for your home-brewing
+            convenience:
+          </p>
+          <div class="recipes__videos">
+            <div>
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/j6VlT_jUVPc"
+              ></iframe>
+              <p class="recipes__videos-caption">
+                <span class="recipes__span-accent">Aeropress Recipe</span> ~5
+                min
+              </p>
+            </div>
+
+            <div>
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/st571DYYTR8"
+              ></iframe>
+              <p class="recipes__videos-caption">
+                <span class="recipes__span-accent">French Press Recipe</span>
+                ~15 min
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- RESERVATION -->
+
+        <section id="reservation-link" class="reservation">
+          <div class="reservation__form">
+            <form class="reservation__form form">
+              <h2 class="reservation__title">Book a Table</h2>
+              <fieldset class="form__fieldset">
+                <label for="name" class="form__label">Name *</label>
+                <input
+                  class="form__input"
+                  type="text"
+                  id="name"
+                  placeholder="Name Sirname"
+                  required
+                />
+                <label for="guests" class="form__label"
+                  >Number of Guests *</label
+                >
+                <input
+                  class="form__input"
+                  type="number"
+                  id="guests"
+                  placeholder="1-8"
+                  required
+                />
+                <label for="date" class="form__label">Date & Time *</label>
+                <input class="form__input" type="datetime-local" id="date" />
+                <label for="email" class="form__label">Your Email *</label>
+                <input
+                  class="form__input"
+                  type="email"
+                  id="email"
+                  placeholder="email@email.com"
+                  required
+                />
+                <button class="form__button">Book a Table</button>
+                <label
+                  for="checkbox"
+                  class="form__label form__label_type_checkbox"
+                  ><input
+                    type="checkbox"
+                    class="form__checkbox"
+                    id="checkbox"
+                  />I agree with Terms of Use</label
+                >
+              </fieldset>
+            </form>
+          </div>
+        </section>
+        <section id="menu-link" class="menu"><!-- MENU --></section>
+        <section id="contacts-link" class="about"><!-- ABOUT --></section>
       </main>
       <footer class="footer"></footer>
     </div>
