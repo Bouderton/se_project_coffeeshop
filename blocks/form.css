@@ -56,10 +56,15 @@
 
 .form__button:hover {
   opacity: 70%;
+  cursor: pointer;
 }
 
 .form__checkbox {
   width: 20px;
   height: 20px;
   border-radius: 2px;
+}
+
+.form__checkbox:hover {
+  cursor: pointer;
 }
