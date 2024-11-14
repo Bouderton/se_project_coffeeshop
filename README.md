@@ -1,6 +1,6 @@
 # Triple Peaks Coffee Shop
 
-This is the second project of the Software Engineering program at TripleTen. It was created using HTML and CSS, based on the design brief.
+This is a Front-End application that represents a landing page for a local coffee shop - Triple Peaks. Created using HTML and CSS, users an explore what Triple Peaks is all about!
 
 ## Project features
 
@@ -13,7 +13,9 @@ This is the second project of the Software Engineering program at TripleTen. It 
 
 ## Plan on improving the project
 
-Add your ideas here :)
+- Responsive design
+- Cleanup structure and add JS functionality
+- Add clean animations
 
 ## Page Link
 https://bouderton.github.io/se_project_coffeeshop/
