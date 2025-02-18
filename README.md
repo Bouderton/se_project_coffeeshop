@@ -11,7 +11,7 @@ This is a Front-End application that represents a landing page for a local coffe
 - A custom form
 - CSS animation and transform
 
-## Plan on improving the project
+## Plan on improving the project (NOW IN PROGRESS)
 
 - Responsive design
 - Cleanup structure and add JS functionality
