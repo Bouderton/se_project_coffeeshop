@@ -4,8 +4,8 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="app">
-        <p>CLEAN</p>
+      <div className="page">
+        <p style={{ textAlign: "center" }}>CLEAN</p>
       </div>
     </>
   );
